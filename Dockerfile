@@ -20,7 +20,11 @@ WORKDIR /data
 # Define default command.
 CMD ["bash"]
 # Expose ports.
-#   - 27017: process
-#   - 28017: http
+#  mongo - 27017: process
+#  mongo - 28017: http
+#  scrapy Telnet 6023
+#  scrapy Web service 6080
 EXPOSE 27017
 EXPOSE 28017
+EXPOSE 6023
+EXPOSE 6080
